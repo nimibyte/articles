@@ -1,4 +1,9 @@
-<h1 style="display: flex; align-items: center; gap: 10px;"><img src="../../logo.png" alt="Nimibyte Academy" width="50" />Beyond Clean Architecture: A Pragmatic Software Model for Real-World Scalability</h1>
+<table>
+  <tr>
+    <td valign="middle"><img src="../../logo.png" alt="Nimibyte Academy" width="50" /></td>
+    <td valign="middle"><h1>Beyond Clean Architecture: A Pragmatic Software Model for Real-World Scalability</h1></td>
+  </tr>
+</table>
 
 Read in Espanol: [`README.es.md`](./README.es.md)
 

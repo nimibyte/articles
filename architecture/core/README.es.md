@@ -1,4 +1,9 @@
-<h1 style="display: flex; align-items: center; gap: 10px;"><img src="../../logo.png" alt="Nimibyte Academy" width="50" />Mas Alla de Clean Architecture: un modelo pragmatico para escalar software real</h1>
+<table>
+  <tr>
+    <td valign="middle"><img src="../../logo.png" alt="Nimibyte Academy" width="50" /></td>
+    <td valign="middle"><h1>Mas Alla de Clean Architecture: un modelo pragmatico para escalar software real</h1></td>
+  </tr>
+</table>
 
 Read in English: [`README.en.md`](./README.en.md)
 

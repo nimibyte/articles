@@ -1,4 +1,9 @@
-<h1 style="display: flex; align-items: center; gap: 10px;"><img src="../../logo.png" alt="Nimibyte Academy" width="50" />Beyond Clean Architecture</h1>
+<table>
+  <tr>
+    <td valign="middle"><img src="../../logo.png" alt="Nimibyte Academy" width="50" /></td>
+    <td valign="middle"><h1>Beyond Clean Architecture</h1></td>
+  </tr>
+</table>
 
 This article is available in two languages:
 

@@ -1,4 +1,9 @@
-<h1 style="display: flex; align-items: center; gap: 10px;"><img src="./logo.png" alt="Nimibyte Academy" width="50" />Nimibyte Academy</h1>
+<table>
+  <tr>
+    <td valign="middle"><img src="./logo.png" alt="Nimibyte Academy" width="50" /></td>
+    <td valign="middle"><h1>Nimibyte Academy</h1></td>
+  </tr>
+</table>
 
 Practical software engineering articles from the Nimibyte team, focused on decisions you can apply in real projects.
 
