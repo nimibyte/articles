@@ -7,6 +7,12 @@
 
 Read in English: [`README.en.md`](./README.en.md)
 
+## TL;DR
+
+Si tu equipo necesita entregar rapido sin crear caos a largo plazo, este modelo te ayuda a tomar decisiones de arquitectura con impacto de cambio predecible.
+
+Esta pensado para equipos que necesitan velocidad de entrega y mantenibilidad al mismo tiempo.
+
 ## Por que existe este modelo
 
 Muchas conversaciones de arquitectura parten de un escenario ideal: alcance estable, tiempo de sobra y equipos hiper especializados. La mayoria de empresas no opera asi.
@@ -24,6 +30,12 @@ En los tres casos, los problemas suelen repetirse:
 - Muy complejo: onboarding lento y friccion constante.
 
 Este modelo nace como punto medio: suficiente orden para escalar y suficiente simplicidad para adoptar.
+
+## Para quien es este modelo
+
+- Equipos que escalan de 3 a 30+ ingenieros.
+- Productos con presion de releases semanales.
+- Codebases donde onboarding y refactors empiezan a costar caro.
 
 ## Idea central
 
@@ -70,6 +82,14 @@ Dentro de `/src`:
 
 Asi se separan responsabilidades del stack y del negocio sin perder velocidad.
 
+## Matriz de adopcion
+
+| Contexto | Prioridad | Como aplicar este modelo |
+| --- | --- | --- |
+| Consultoria | Velocidad con bajo retrabajo | Mantener convenciones de rutas estrictas e interfaces ligeras. |
+| Startup | Pivotar rapido con deuda controlada | Empezar con limites minimos de capas y reforzar interfaces al estabilizar producto. |
+| Producto maduro | Fiabilidad y mantenibilidad | Forzar contratos explicitos y ownership de alcance entre equipos. |
+
 ## Ejemplo de impacto de cambios
 
 Solicitud: "Agregar alertas de vencimiento de trial en el dashboard de usuario".
@@ -85,10 +105,12 @@ Como el alcance de cada capa es explicito, puedes estimar efectos secundarios an
 
 ## Comparacion con enfoques comunes
 
-- MVC / por capas: rapido para arrancar, suele derivar en ownership difuso.
-- Clean / Hexagonal: limites muy buenos, a veces demasiado peso para equipos que iteran rapido.
-- Implementaciones muy cargadas de DDD: modelado potente, pero pueden sobredisenar antes de validar producto.
-- Este modelo: prioriza alineacion con negocio con estructura suficiente para escalar.
+| Enfoque | Velocidad inicial | Seguridad ante cambios | Carga cognitiva | Mejor escenario |
+| --- | --- | --- | --- | --- |
+| MVC / por capas | Alta | Media-Baja | Baja al inicio, mayor despues | Apps pequenas y proyectos cortos |
+| Clean / Hexagonal | Media-Baja | Alta | Media-Alta | Sistemas con limites estrictos |
+| Implementaciones cargadas de DDD | Media | Alta | Alta | Dominios complejos con equipos estables |
+| Este modelo | Alta-Media | Alta-Media | Media | Equipos de producto que equilibran velocidad y escalabilidad |
 
 ## Cuando este modelo no es la mejor opcion
 
@@ -101,6 +123,26 @@ Como el alcance de cada capa es explicito, puedes estimar efectos secundarios an
 Una buena arquitectura debe acelerar la entrega, no frenarla.
 
 Este modelo apuesta por escalabilidad practica: rutas claras, alcance explicito y crecimiento modular. Permite iterar rapido sin esconder complejidad que luego bloquee la evolucion del producto.
+
+## AI teaching pack (learn + apply + defend)
+
+Usa estos prompts con cualquier asistente de IA para asimilar y exponer el modelo:
+
+1. Explica este modelo a un perfil junior en 90 segundos usando una feature concreta.
+2. Compara este modelo con Clean Architecture para una startup con pivots semanales.
+3. Dado un bug en pricing de checkout, mapea archivos probables por capa y alcance de impacto.
+4. Cuestiona este modelo: lista tres modos de fallo y como mitigarlos.
+5. Simula una revision con CTO donde debo defender por que este modelo no es sobreingenieria.
+
+## Rubrica rapida de evaluacion
+
+Puntua cada respuesta de 0 a 5:
+
+- Claridad: puede explicarlo de forma simple?
+- Causalidad: explica por que importa cada regla?
+- Limites: sabe cuando no conviene usar el modelo?
+- Trade-offs: compara alternativas de forma honesta?
+- Transferencia: lo aplica a escenarios nuevos?
 
 ## Ejemplo real
 

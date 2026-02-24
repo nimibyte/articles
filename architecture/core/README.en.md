@@ -7,6 +7,12 @@
 
 Read in Espanol: [`README.es.md`](./README.es.md)
 
+## TL;DR
+
+If your team needs to ship quickly without creating long-term chaos, use this model to make architectural decisions with predictable change impact.
+
+It is designed for teams that need both delivery speed and maintainability.
+
 ## Why this model exists
 
 Most architecture conversations assume ideal conditions: stable scope, abundant time, and deeply specialized teams. Most companies do not work like that.
@@ -24,6 +30,12 @@ In all three contexts, architecture fails for similar reasons:
 - Too complex: onboarding cost grows faster than product value.
 
 This model is a practical middle ground: clear enough to scale, simple enough to adopt.
+
+## Who this is for
+
+- Teams scaling from 3 to 30+ engineers.
+- Products with weekly release pressure.
+- Codebases where onboarding and refactors are getting expensive.
 
 ## Core idea
 
@@ -70,6 +82,14 @@ Inside `/src`:
 
 This structure keeps stack concerns and business concerns separate, while still being practical for product teams.
 
+## Adoption matrix
+
+| Context | Priority | How to apply this model |
+| --- | --- | --- |
+| Consultancy | Delivery speed with low rework | Keep strict path conventions and lightweight interfaces. |
+| Startup | Fast pivots with controlled debt | Start with minimal layer boundaries, harden interfaces as product stabilizes. |
+| Mature product | Reliability and maintainability | Enforce explicit contracts and scope ownership across teams. |
+
 ## Change impact example
 
 Feature request: "Add trial expiration warnings to user dashboard."
@@ -85,10 +105,12 @@ You can reason about side effects before coding because the scope of each layer 
 
 ## Comparison with common approaches
 
-- MVC / layered: fast to start, often drifts into unclear ownership.
-- Clean / Hexagonal: excellent boundaries, can be too heavy for fast-moving teams.
-- DDD-heavy implementations: strong modeling, but can over-invest in structure before product learning stabilizes.
-- This model: keeps business alignment first, with enough structure to scale.
+| Approach | Startup speed | Change safety | Cognitive load | Best use case |
+| --- | --- | --- | --- | --- |
+| MVC / layered | High | Medium-Low | Low at start, higher later | Small apps and short-lived projects |
+| Clean / Hexagonal | Medium-Low | High | Medium-High | Systems needing strict boundaries |
+| DDD-heavy implementations | Medium | High | High | Complex domains with stable teams |
+| This model | High-Medium | High-Medium | Medium | Product teams balancing speed and scalability |
 
 ## When this model is not the best fit
 
@@ -101,6 +123,26 @@ You can reason about side effects before coding because the scope of each layer 
 Good architecture should improve delivery, not slow it down.
 
 This model focuses on practical scalability: clear paths, explicit scope, and modular growth. It helps teams ship quickly without creating hidden complexity that blocks future evolution.
+
+## AI teaching pack (learn + apply + defend)
+
+Use these prompts with any AI assistant to internalize and explain the model:
+
+1. Explain this model to a junior engineer in 90 seconds using one concrete feature example.
+2. Compare this model with Clean Architecture for a startup with weekly pivots.
+3. Given a bug in checkout pricing, map likely files by layer and expected blast radius.
+4. Challenge this model: list three failure modes and how to mitigate them.
+5. Simulate a CTO review where I must defend why this model is not over-engineered.
+
+## Quick assessment rubric
+
+Score each answer from 0 to 5:
+
+- Clarity: can the person explain it simply?
+- Causality: do they explain why each rule matters?
+- Boundaries: do they know where the model should not be used?
+- Trade-offs: can they compare alternatives honestly?
+- Transfer: can they apply it to a new scenario?
 
 ## Real example
 
