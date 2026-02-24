@@ -1,6 +1,4 @@
-# Beyond Clean Architecture
-
-![Nimibyte Academy](../../logo.png)
+# <img src="../../logo.png" alt="Nimibyte Academy" width="36" /> Beyond Clean Architecture
 
 This article is available in two languages:
 

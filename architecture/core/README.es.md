@@ -1,6 +1,4 @@
-# Mas Alla de Clean Architecture: un modelo pragmatico para escalar software real
-
-![Nimibyte Academy](../../logo.png)
+# <img src="../../logo.png" alt="Nimibyte Academy" width="36" /> Mas Alla de Clean Architecture: un modelo pragmatico para escalar software real
 
 Read in English: [`README.en.md`](./README.en.md)
 

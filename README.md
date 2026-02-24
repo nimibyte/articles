@@ -1,6 +1,4 @@
-# Nimibyte Academy
-
-![Nimibyte Academy](./logo.png)
+# <img src="./logo.png" alt="Nimibyte Academy" width="36" /> Nimibyte Academy
 
 Practical software engineering articles from the Nimibyte team, focused on decisions you can apply in real projects.
 
