@@ -1,4 +1,4 @@
-# <img src="./logo.png" alt="Nimibyte Academy" width="50" /> Nimibyte Academy
+<h1><img src="./logo.png" alt="Nimibyte Academy" width="50" style="vertical-align: middle; margin-right: 10px;" />Nimibyte Academy</h1>
 
 Practical software engineering articles from the Nimibyte team, focused on decisions you can apply in real projects.
 

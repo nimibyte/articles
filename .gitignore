@@ -1,0 +1,9 @@
+# Skills CLI local/project artifacts
+/skills/
+/skills-lock.json
+
+# Agent-specific skill symlink folders generated in project root
+/.*/skills/
+
+# Local skills storage when created inside the repository
+/.agents/
