@@ -1,4 +1,4 @@
-# <img src="../../logo.png" alt="Nimibyte Academy" width="36" /> Beyond Clean Architecture: A Pragmatic Software Model for Real-World Scalability
+# <img src="../../logo.png" alt="Nimibyte Academy" width="50" /> Beyond Clean Architecture: A Pragmatic Software Model for Real-World Scalability
 
 Read in Espanol: [`README.es.md`](./README.es.md)
 

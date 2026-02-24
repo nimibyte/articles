@@ -1,4 +1,4 @@
-# <img src="../../logo.png" alt="Nimibyte Academy" width="36" /> Beyond Clean Architecture
+# <img src="../../logo.png" alt="Nimibyte Academy" width="50" /> Beyond Clean Architecture
 
 This article is available in two languages:
 
